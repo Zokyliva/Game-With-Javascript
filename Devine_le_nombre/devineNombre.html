@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="devine.css">
+    <title>Devine le nombre</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Devine le nombre (entre 1 et 100)</h1>
+        <h2 class="lettreParlettr"></h2>
+        <div class="form">
+            <input type="number" id="guessInput" placeholder="Ta proposition">
+            <button id="guessButton">Deviner</button>
+        </div>
+
+
+        <p id="result"></p>
+        <audio src="../audio/sonnerie.mp3" class="typeSound" preload="auto"></audio>
+    </div>
+
+    <script src="devine.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.grille{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    background: url('images/space.jpg');
+    /*not using backgroud repeat for animation*/
+    animation:  backgroud-defile 5s linear infinite;
+}
+
+@keyframes backgroud-defile{
+    from{
+        background-position-y: 0px;
+    }
+    to{
+        background-position-y: 250px;
+    }
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.grille div{
+    width: 25px;
+    height: 25px;
+
+}
+
+.tireur{
+    background-color: chartreuse;
+}
+
+.alien {
+    background-color: darkgreen;
+}
+
+.boom{
+    background-color: red;
+}
+
+.laser{
+    background-color: rgb(214, 118, 7);
+}

@@ -1,0 +1,47 @@
+*, ::before , ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    background-color: brown;
+    height: 80px;
+    padding: 0 15px;
+}
+
+header h2{
+    line-height: 80px;
+    color: #fff;
+}
+
+section{
+    width: 90%;
+    margin: 25px auto;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 2px solid brown;
+}
+
+section div{
+    padding: 10px 20px;
+    border: 2px solid brown;
+    width: 48%;
+    margin-top: 15px;
+}
+
+section div a{
+    display: block;
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    margin-top: 15px;
+}
