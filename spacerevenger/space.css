@@ -45,4 +45,5 @@ h1{
 
 .laser{
     background-color: rgb(214, 118, 7);
+    border-radius: 9999px;
 }

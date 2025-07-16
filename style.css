@@ -4,44 +4,162 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
     font-family: 'Courier New', Courier, monospace;
-}
-
-header{
-    background-color: brown;
-    height: 80px;
-    padding: 0 15px;
-}
-
-header h2{
-    line-height: 80px;
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    width: 100%;
     color: #fff;
 }
 
-section{
-    width: 90%;
-    margin: 25px auto;
-    padding: 15px;
+header{
+    height: 80px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0px 0px 1px 0px #fff;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+}
+
+p{
+    font-size: 20px;
+}
+
+span{
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #bbfa00;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container .lettreParlettre {
+    position: relative;
+    top: 250px;
+    width: 85%;
+    height: 80px;
+    font-size: 18px;
+    margin:  0 auto;
+    text-align: center;
+    color: hsl(75, 100%, 49%);
+    z-index: 1;
+}
+
+.animation{
+    height: 450px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border: 2px solid brown;
 }
 
-section div{
-    padding: 10px 20px;
-    border: 2px solid brown;
-    width: 48%;
-    margin-top: 15px;
+.animation .canvas-particule{
+    height: 100%;
+    width: 100%;
 }
 
-section div a{
+.animation .container-image{
+    height: 100%;
+    width: 100%;
+}
+
+.container-image img{
+    height: 70%;
+    width: 100%;
+}
+
+.section-jeux{
+    position: relative;
+    top: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-jeux .jeux{
     display: block;
-    background-color: brown;
-    padding: 10px;
-    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+    padding: 15px 15px;
+    box-shadow: 0 0 5px 0 #161816;
+    border-radius: 10px;
+}
+
+.jeux p{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.jeux a{
     text-decoration: none;
-    color:#fff;
+    box-shadow: 0 0 3px 0 #474646;
+    padding: 5px 8px;
     margin-top: 15px;
+    color: #bbfa00;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+/* responsive */
+
+@media screen and (min-width : 600px) {
+    .container .lettreParlettre{
+        width: 55%;
+        font-size: 25px;
+    }
+    .container .container-image img{
+        height: 90%;
+        width: 100%;
+    }
+    .container .section-jeux{
+        justify-content: space-around;
+        align-items: center;
+        top: 430px;
+    }
+    .container .section-jeux .jeux{
+        width: 45%;
+        margin: 16px 0;
+    }
+}
+
+@media screen and (min-width : 980px) {
+    .container .lettreParlettre{
+        width: 45%;
+        font-size: 32px;
+        text-align: left;
+        margin:  0 0 0 20px;
+    }
+    .animation{
+        height: 400px;
+    }
+    .animation .canvas-particule{
+        height: 100%;
+        width: 50%;
+    }
+    .animation .container-image{
+        height: 100%;
+        width: 50%;
+    }
+    .container .container-image img{
+        height: 100%;
+        width: 100%;
+    }
+    .container .section-jeux{
+        top: 30px;
+    }
+    .container .section-jeux .jeux{
+        width: 25%;
+        margin: 16px 0;
+    }
 }
